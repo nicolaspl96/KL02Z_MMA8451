@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+
 # Excluye carpetas de MCUXpresso Workspace
 *.metadata
 *.mcuxpressoide_packages_support
