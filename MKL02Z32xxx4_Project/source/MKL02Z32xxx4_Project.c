@@ -63,6 +63,9 @@ uint16_t dato_acelerometro;
        PRINTF("v-V led VERDE\r\n");
        PRINTF("a-A led AZUL\r\n");
        PRINTF("M buscar acelerometro\r\n");
+       PRINTF("X:dato en eje x\r\n");
+       PRINTF("Z:dato en eje z\r\n");
+       PRINTF("Y:dato en eje y\r\n");
 
 
 
@@ -119,7 +122,7 @@ uint16_t dato_acelerometro;
     				     dato_acelerometro=nuevo_dato_i2c_1|nuevo_dato_i2c_2;
     				     dato_acelerometro>>=2;
 
-    				    				 printf("el valor en Y:",dato_acelerometro);
+    				    				 printf("el valor en Y:%d\r\n",dato_acelerometro);
     				 break;
 
 
@@ -131,7 +134,7 @@ uint16_t dato_acelerometro;
     				     dato_acelerometro=nuevo_dato_i2c_1|nuevo_dato_i2c_2;
     				     dato_acelerometro>>=2;
 
-    				    				   printf("el valor en Y:",dato_acelerometro);
+    				    				   printf("el valor en Z:%d\r\n",dato_acelerometro);
     				  break;
 
         			}
